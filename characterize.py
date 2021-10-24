@@ -1,4 +1,6 @@
-filename = '/r-cryptocurrency/2017-11.csv'
+import sys,os
+sys.path.append(os.path.realpath('..'))
+filename = 'r-cryptocurrency/2017-11.csv'
 import pandas as pd
 df = pd.read_csv(filename, encoding='utf-8')
 #df.head
